@@ -1500,6 +1500,7 @@ button {
 .hero__sub-heading {
   margin-top: 15px;
   width: 350px;
+  line-height: normal;
 }
 .hero__desc {
   margin-top: 28px;
