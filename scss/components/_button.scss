@@ -1,0 +1,35 @@
+@use "../variables";
+
+.btn {
+  width: 154px;
+  height: 56px;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 8px;
+  background-color: variables.$primary-main-color;
+  transition: background-color 0.4s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: variables.$orange-600;
+  }
+
+  &-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 31px auto 0 auto;
+    padding: 13px 12px;
+    border-radius: 6px;
+    background: variables.$primary-main-color;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 700;
+
+    &:hover {
+      background-color: variables.$orange-600;
+    }
+  }
+}

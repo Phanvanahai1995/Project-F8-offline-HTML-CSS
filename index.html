@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Chop</title>
+    <!-- Fon awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Font Embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="hero-title">
+                <h1 class="hero__heading">GreenChop: Tiện gấp dễ gắp</h1>
+                <h2 class="hero__heading hero__sub-heading">
+                  AN TOÀN HƠN GIỮA MÙA COVID
+                </h2>
+                <p class="desc hero__desc">
+                  GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường hiện
+                  tại. Sản phẩm cho phép người dùng tháo lắp và thay mới đầu đũa
+                  100% trong mỗi bữa ăn. Nhờ đó, GreenChop giúp ngăn ngừa khả năng
+                  lây lan dịch bệnh và đảm bảo an toàn cho người dùng.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="hero-inner">
+                <img src="./assets/img/logo/Logo-chop.svg" class="hero-inner__img"></img>
+                <div class="hero-inner__background">
+                  <span class="hero-inner__desc">GREEN CHOP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section id="service">
+    </section>
+    <section id="product" class="product"></section>
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    <script src="./assets/javascript/main.js"></script>
+    <script>
+      load("#header", "./templates/header.html");
+    </script>
+    <script>
+      load("#service", "./templates/service.html");
+    </script>
+     <script>
+      load("#product", "./templates/product.html");
+    </script>
+    <script>
+      load("#footer", "./templates/footer.html");
+    </script>
+    <script src="./assets/javascript/js.js"></script>
+  </body>
+</html>

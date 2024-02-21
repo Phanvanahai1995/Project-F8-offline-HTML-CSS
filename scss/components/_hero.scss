@@ -1,0 +1,64 @@
+@use "../variables";
+
+.hero {
+  padding-top: 109px;
+  &-title {
+    height: 708px;
+    padding: 218px 0 231px 0;
+  }
+
+  &__heading {
+    width: 514px;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 800;
+    color: variables.$primary-text-color;
+  }
+
+  &__sub-heading {
+    margin-top: 15px;
+    width: 350px;
+  }
+
+  &__desc {
+    margin-top: 28px;
+    width: 450px;
+  }
+
+  &-inner {
+    position: relative;
+    background-color: orange;
+
+    &__img {
+      position: absolute;
+      top: -5px;
+      left: -164px;
+      z-index: 1;
+      object-fit: cover;
+    }
+
+    &__background {
+      position: absolute;
+      width: 776px;
+      height: 708px;
+      top: 0;
+      left: 6px;
+      border-radius: 21.36px 0px 0px 21.36px;
+      background: variables.$green-200;
+    }
+
+    &__desc {
+      width: 676.141px;
+      position: absolute;
+      top: 218px;
+      right: -157px;
+      color: variables.$green-1000;
+      font-size: 16.7rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 100%;
+      opacity: 0.15;
+      transform: rotate(90deg);
+    }
+  }
+}
