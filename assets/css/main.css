@@ -1240,7 +1240,7 @@ button {
 }
 .navbar-link::after {
   position: absolute;
-  top: 82px;
+  top: 83px;
   left: 0;
   content: "";
   width: 100%;
