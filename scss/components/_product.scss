@@ -1,7 +1,7 @@
 @use "../variables";
 
 .product {
-  padding: 100px 0 128px 0;
+  padding: 100px 0 133px 0;
 
   &-heading {
     margin-bottom: -46px;
@@ -14,6 +14,14 @@
     &__icon {
       display: block;
       margin: 0 auto;
+    }
+
+    &-1 {
+      margin-left: 103px;
+    }
+
+    &-2 {
+      margin-right: 108px;
     }
   }
 
@@ -33,13 +41,24 @@
     }
   }
 
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__left {
+      margin-left: -28px;
+    }
+  }
+
   &-title {
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 0 auto;
+    margin-top: 17.19px;
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2.333rem;
     font-weight: 700;
     color: variables.$primary-text-color;
     line-height: normal;
@@ -68,7 +87,7 @@
     &::after {
       display: block;
       position: absolute;
-      bottom: -13px;
+      bottom: -15px;
       left: 50%;
       translate: -50%;
       content: "";
@@ -80,24 +99,27 @@
 
   &-desc,
   &-price {
-    font-size: 1.7rem;
-    font-weight: 400;
+    font-size: 1.667rem;
+    font-style: normal;
+    line-height: 130%;
   }
 
   &-desc {
-    margin-top: 29px;
+    margin-top: 30.48px;
     display: block;
-    text-align: center;
+    // text-align: center;
     color: variables.$grey-800;
   }
 
   &-price {
-    margin-top: 6px;
-    text-align: center;
+    margin-top: 12px;
+    // text-align: center;
     color: variables.$primary-text-color;
 
     strong {
+      font-size: 2.333rem;
       font-weight: 600;
+      line-height: 114, 3%;
     }
   }
 }

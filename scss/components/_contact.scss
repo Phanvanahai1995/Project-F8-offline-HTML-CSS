@@ -1,0 +1,65 @@
+@use "../variables";
+
+.contact {
+  padding: 144.67px 0 101px 0;
+
+  &-image {
+    max-width: 485.833px;
+    margin-left: 4px;
+  }
+
+  &-form {
+    margin-left: -4px;
+    &__heading {
+      max-width: 361px;
+      margin-top: 58.5px;
+    }
+
+    &__name {
+      width: 598px;
+      margin-top: 26px;
+      padding: 13.333px 491.667px 13.333px 13.333px;
+      border-radius: 6.667px;
+      border: 0.833px solid variables.$grey-500-main;
+    }
+
+    &__row {
+      display: flex;
+      gap: 17.5px;
+      margin-top: 24.76px;
+    }
+
+    &__email,
+    &__phone {
+      max-width: 286.667px;
+    }
+
+    input,
+    textarea {
+      padding: 13.333px 176.667px 13.333px 13.333px;
+      border-radius: 6.667px;
+      border: 0.833px solid variables.$grey-500-main;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: normal;
+      color: variables.$grey-500-main;
+    }
+
+    textarea {
+      margin-top: 23.67px;
+      display: block;
+      width: 596.8333px;
+      height: 149px;
+    }
+
+    &__btn {
+      margin-top: 26.65px;
+      display: block;
+      margin-left: 462px;
+    }
+  }
+}

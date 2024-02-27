@@ -1,0 +1,120 @@
+@use "../variables";
+
+#footer {
+  padding: 63.92px 0 26.67px 0;
+  background: variables.$green-100;
+}
+
+.footer {
+  &-inner {
+    display: flex;
+  }
+
+  &-column__left {
+    margin-left: 112px;
+
+    &-desc {
+      display: flex;
+      flex-direction: column;
+      margin-top: 22.58px;
+      font-size: 1.3333rem;
+      font-style: normal;
+      line-height: 153.125%;
+      color: variables.$primary-text-color;
+
+      strong {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &-list {
+    margin-top: 2.75px;
+
+    &__one {
+      margin-left: 113.5px;
+    }
+
+    &__two {
+      margin-left: 89.17px;
+    }
+
+    &__three {
+      margin-left: 69.97px;
+    }
+  }
+
+  &-item {
+    margin-bottom: 6.67px;
+    &__heading {
+      display: block;
+      margin-bottom: 13px;
+      font-size: 1.6667rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+      color: variables.$primary-main-color;
+    }
+
+    &__link {
+      color: variables.$primary-text-color;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 127.604%;
+
+      &-decorate {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &-strong {
+          font-weight: 600;
+        }
+
+        &-break {
+          max-width: 208px;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+
+  &-separate {
+    display: block;
+    margin: 69.5px auto 0 auto;
+    max-width: 975px;
+    height: 1.667px;
+    background-color: variables.$grey-500-main;
+  }
+
+  &-end {
+    margin-top: 24.17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__img {
+      margin-left: 106.67px;
+    }
+
+    &__list {
+      margin-right: 106.67px;
+    }
+
+    &__link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      margin-left: 6.67px;
+      border-radius: 50%;
+      background-color: variables.$green-200;
+    }
+
+    &__icon {
+      max-width: 22.4px;
+      max-height: 22.4px;
+    }
+  }
+}

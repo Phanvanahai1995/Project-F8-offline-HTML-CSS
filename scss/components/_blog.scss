@@ -1,0 +1,74 @@
+@use "../variables";
+@use "../abstracts";
+
+.blog {
+  position: relative;
+  padding-top: 50px;
+
+  &-heading {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 394px;
+    margin: 0 auto;
+  }
+
+  &-desc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    text-align: center;
+  }
+  &-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 61px;
+  }
+
+  &-item {
+    max-width: 345.83px;
+    border-radius: 8.333px;
+    background: #fff;
+  }
+
+  &-img {
+    width: 100%;
+    aspect-ratio: 345.83/195;
+    border-radius: 8.333px;
+    object-fit: cover;
+  }
+
+  &-title {
+    padding: 24.17px 38.33px 0 27.5px;
+
+    &__heading {
+      color: variables.$orange-700;
+      text-shadow: 0px 3.333px 3.333px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &-sub__desc {
+    margin-top: 6.33px;
+    color: variables.$content-color;
+
+    &-1,
+    &-3 {
+      max-width: 231px;
+    }
+
+    &-2 {
+      width: 300px;
+    }
+  }
+
+  &-background {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: variables.$orange-100;
+    height: 360.833px;
+    translate: 0 115.12px;
+    z-index: -1;
+  }
+}

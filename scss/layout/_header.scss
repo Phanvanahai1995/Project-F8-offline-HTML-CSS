@@ -13,11 +13,14 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 19px 0 17px 0;
+  padding: 18.58px 0 16.75px 0;
+  height: 108.333px;
 }
 
 .navbar {
+  margin-top: 14px;
+  margin-left: 355px;
+
   &,
   &-list {
     display: flex;
@@ -28,26 +31,27 @@
     gap: 50px;
   }
 
-  &-dropdown {
-    position: relative;
+  &-item {
+    flex: 0 0 auto;
   }
 
-  &-popup,
-  &-search {
-    cursor: pointer;
+  &-dropdown {
+    position: relative;
   }
 
   &-link {
     padding: 20px 0;
     position: relative;
-    font-size: 1.7rem;
+    font-size: 1.6667rem;
+    font-style: normal;
     font-weight: 600;
+    line-height: 130%;
     color: variables.$primary-main-color;
   }
 
   &-link::after {
     position: absolute;
-    top: 83px;
+    top: 75px;
     left: 0;
     content: "";
     width: 100%;
@@ -75,18 +79,28 @@
 
   &-popup {
     position: relative;
-  }
+    width: 100%;
+    height: 100%;
+    display: block;
 
-  &-popup::before {
-    content: "3";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 13px;
-    height: 13px;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: variables.$orange-700;
-    z-index: 9999;
+    &::after {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: "3";
+      position: absolute;
+      top: 0;
+      right: 0;
+      translate: 25% -25%;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: variables.$orange-700;
+      color: #fff;
+      font-size: 1.0833rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 188.462%;
+    }
   }
 }

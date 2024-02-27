@@ -1,15 +1,27 @@
 @use "../variables";
 
-.desc {
+.desc,
+.heading,
+.sub-heading {
   color: variables.$primary-text-color;
+  font-style: normal;
+}
+
+.desc {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 127.604%;
 }
 
 .heading {
-  color: variables.$primary-text-color;
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 3.1667rem;
   font-weight: 800;
+  line-height: 131.523%;
+}
+
+.sub-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 133.333%;
 }

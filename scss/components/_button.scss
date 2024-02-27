@@ -16,18 +16,84 @@
     background-color: variables.$orange-600;
   }
 
+  // Product
+
   &-product {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 31px auto 0 auto;
-    padding: 13px 12px;
+    width: 177.333px;
+    height: 46.666px;
+    margin-top: 26px;
+    padding: 13.33px 11.67px;
     border-radius: 6px;
     background: variables.$primary-main-color;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 1.6667rem;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
+    transition: background-color 0.4s ease;
 
+    &:hover {
+      background-color: variables.$orange-600;
+    }
+
+    &-1 {
+      margin-left: 60px;
+    }
+
+    &-2 {
+      margin-left: 124px;
+    }
+
+    &-3 {
+      margin-left: 68px;
+    }
+  }
+
+  // Read more
+
+  &-more {
+    display: inline-flex;
+    align-items: center;
+    max-width: 153px;
+    max-height: 46.666px;
+    padding: 11.667px 21.667px;
+    gap: 3.33px;
+    font-size: 1.6667rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: variables.$primary-text-color;
+    background-color: #fff;
+    border-radius: 6.667px;
+    border: 0.833px solid variables.$primary-main-color;
+    transition: background-color 0.4s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: variables.$primary-main-color;
+    }
+
+    span {
+      flex-shrink: 0;
+    }
+  }
+
+  // Submit form
+
+  &-form {
+    width: 128.333px;
+    height: 46.666px;
+    padding: 13.333px 11.667px;
+    border-radius: 6.667px;
+    background: variables.$primary-main-color;
+    font-size: 1.6667rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
     transition: background-color 0.4s ease;
 
     &:hover {

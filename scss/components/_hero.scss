@@ -4,21 +4,22 @@
   padding-top: 109px;
   &-title {
     height: 708px;
-    padding: 218px 0 231px 0;
+    padding: 222px 0 231px 0;
   }
 
   &__heading {
-    width: 514px;
-    font-family: Inter;
-    font-size: 36px;
+    font-size: 3.6667rem;
     font-weight: 800;
     color: variables.$primary-text-color;
   }
 
   &__sub-heading {
-    margin-top: 15px;
-    width: 350px;
+    margin-top: 17px;
+    width: 384px;
+    font-size: 4.3333rem;
+    font-weight: 800;
     line-height: normal;
+    text-transform: uppercase;
   }
 
   &__desc {
@@ -28,12 +29,13 @@
 
   &-inner {
     position: relative;
+    left: 5px;
     background-color: orange;
 
     &__img {
       position: absolute;
-      top: -5px;
-      left: -164px;
+      top: -6px;
+      left: -159px;
       z-index: 1;
       object-fit: cover;
     }
@@ -51,8 +53,8 @@
     &__desc {
       width: 676.141px;
       position: absolute;
-      top: 218px;
-      right: -157px;
+      top: 224px;
+      right: -139px;
       color: variables.$green-1000;
       font-size: 16.7rem;
       font-style: normal;
@@ -60,6 +62,7 @@
       line-height: 100%;
       opacity: 0.15;
       transform: rotate(90deg);
+      text-transform: uppercase;
     }
   }
 }

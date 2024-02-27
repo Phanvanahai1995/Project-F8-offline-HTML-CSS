@@ -1,0 +1,64 @@
+@use "../abstracts";
+@use "../variables";
+
+.news {
+  padding-bottom: 50px;
+  &-desc {
+    max-width: 657.5px;
+    margin: 23px auto 0;
+    text-align: center;
+  }
+
+  &-item {
+    margin-top: 28.83px;
+
+    &__image {
+      max-width: 385px;
+      aspect-ratio: 385/273.333;
+      object-fit: cover;
+      border-radius: 6.667px;
+    }
+
+    &__time {
+      margin-top: 16.27px;
+      display: flex;
+      align-items: center;
+
+      &-desc {
+        color: variables.$primary-main-color;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        flex: 0 0 auto;
+      }
+
+      &-icon {
+        margin-left: 170px;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+      }
+
+      &-date {
+        color: variables.$grey-500-main;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        flex: 0 0 auto;
+      }
+    }
+
+    &__title,
+    &__desc-subtitle {
+      margin-top: 16.27px;
+    }
+  }
+
+  &-btn__more {
+    margin-top: 79.67px;
+    display: flex;
+    justify-content: center;
+  }
+}

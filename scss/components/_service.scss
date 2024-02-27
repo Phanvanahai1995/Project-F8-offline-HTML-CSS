@@ -1,5 +1,9 @@
 @use "../variables";
 
+#service {
+  padding-bottom: 114px;
+}
+
 .service {
   &__heading {
     width: 558px;
@@ -18,46 +22,50 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 22px;
+    gap: 21.67px;
+    margin-top: 103px;
   }
 
   &-item {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 23px;
-    margin-top: 115px;
+    gap: 23.33px;
+    // margin-top: 115px;
     width: 294.167px;
-    padding: 33px 38px 59px 33px;
+    padding: 33.33px 38.33px 58.83px 33.33px;
     border-radius: 3.333px;
     background: #fff;
     box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
 
     &__big {
       width: 342.5px;
-      padding: 61px 35px 86px 33px;
+      padding: 60.83px 35px 86.33px 33.33px;
       .service-item__icon {
         background-color: variables.$green-100;
       }
     }
 
     &__icon {
-      width: 83px;
-      height: 83px;
+      width: 83.33px;
+      height: 83.33px;
+      padding: 19.17px;
       border-radius: 10px;
       background: variables.$orange-100;
     }
 
     &__number {
       color: variables.$primary-text-color;
-      font-size: 4.3rem;
+      font-size: 4.333rem;
       font-weight: 800;
     }
 
     &__desc {
+      margin-top: 6px;
       color: variables.$primary-text-color;
       font-size: 2rem;
-      line-height: 30.833px; /* 154.167% */
+      font-style: normal;
+      line-height: 154.167%;
     }
 
     &__decorate,
@@ -70,16 +78,14 @@
     }
 
     &__decorate {
-      top: 0;
-      left: 0;
-      translate: -50% -50%;
+      top: -122px;
+      left: -112px;
       background-color: variables.$green-200;
     }
 
     &__decorate-last {
-      bottom: 0;
-      right: 0;
-      translate: 50% 50%;
+      bottom: -140.33px;
+      right: -115.4966px;
       background-color: variables.$orange-200;
     }
   }
