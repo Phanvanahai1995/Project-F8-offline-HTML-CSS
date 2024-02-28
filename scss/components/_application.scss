@@ -103,5 +103,9 @@
     @include abstracts.screen(lg) {
       font-size: 1.4rem;
     }
+
+    @include abstracts.screen(sm) {
+      max-width: 100%;
+    }
   }
 }

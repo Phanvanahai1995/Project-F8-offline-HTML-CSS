@@ -2417,6 +2417,11 @@ button {
     font-size: 1.4rem;
   }
 }
+@media (max-width: 575.98px) {
+  .application-desc {
+    max-width: 100%;
+  }
+}
 
 .contact {
   padding: 144.67px 0 101px 0;
