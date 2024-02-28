@@ -1266,6 +1266,11 @@ button {
     inset: 0 50% 0 0;
   }
 }
+@media (max-width: 575.98px) {
+  .navbar {
+    inset: 0 30% 0 0;
+  }
+}
 .navbar-hide {
   opacity: 1;
   visibility: visible;
@@ -1635,6 +1640,11 @@ button {
     font-size: 2.8rem;
   }
 }
+@media (max-width: 575.98px) {
+  .hero__heading {
+    text-align: center;
+  }
+}
 .hero__sub-heading {
   margin-top: 17px;
   width: 384px;
@@ -1651,6 +1661,11 @@ button {
 @media (max-width: 991.98px) {
   .hero__sub-heading {
     font-size: 3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero__sub-heading {
+    font-size: 2.8rem;
   }
 }
 .hero__desc {
@@ -1940,7 +1955,7 @@ button {
 }
 @media (max-width: 575.98px) {
   .product-heading {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 }
 .product-item {
@@ -2320,6 +2335,11 @@ button {
     margin-left: 0;
   }
 }
+@media (max-width: 575.98px) {
+  .application-item__one {
+    margin-left: 9px;
+  }
+}
 .application-item__two {
   justify-content: center;
   margin-left: -5px;
@@ -2327,6 +2347,11 @@ button {
 @media (max-width: 991.98px) {
   .application-item__two {
     margin-left: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .application-item__two {
+    justify-content: flex-start;
   }
 }
 .application-item__three {
@@ -2421,6 +2446,12 @@ button {
 @media (max-width: 1199.98px) {
   .contact-form__heading {
     margin-top: 0;
+  }
+}
+@media (max-width: 575.98px) {
+  .contact-form__heading {
+    text-align: center;
+    margin: 0 auto;
   }
 }
 .contact-form__name {

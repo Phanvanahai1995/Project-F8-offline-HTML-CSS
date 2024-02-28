@@ -62,6 +62,10 @@
     inset: 0 50% 0 0;
   }
 
+  @include abstracts.screen(sm) {
+    inset: 0 30% 0 0;
+  }
+
   &-hide {
     opacity: 1;
     visibility: visible;

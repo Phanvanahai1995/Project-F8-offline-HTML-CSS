@@ -27,6 +27,11 @@
       @include abstracts.screen(xl) {
         margin-top: 0;
       }
+
+      @include abstracts.screen(sm) {
+        text-align: center;
+        margin: 0 auto;
+      }
     }
 
     &__name {

@@ -23,6 +23,10 @@
       @include abstracts.screen(xl) {
         margin-left: 0;
       }
+
+      @include abstracts.screen(sm) {
+        margin-left: 9px;
+      }
     }
 
     &__two {
@@ -31,6 +35,10 @@
 
       @include abstracts.screen(lg) {
         margin-left: 20px;
+      }
+
+      @include abstracts.screen(sm) {
+        justify-content: flex-start;
       }
     }
 

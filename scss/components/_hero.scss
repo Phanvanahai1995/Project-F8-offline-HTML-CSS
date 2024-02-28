@@ -22,6 +22,10 @@
     @include abstracts.screen(lg) {
       font-size: 2.8rem;
     }
+
+    @include abstracts.screen(sm) {
+      text-align: center;
+    }
   }
 
   &__sub-heading {
@@ -38,6 +42,10 @@
 
     @include abstracts.screen(lg) {
       font-size: 3rem;
+    }
+
+    @include abstracts.screen(sm) {
+      font-size: 2.8rem;
     }
   }
 
