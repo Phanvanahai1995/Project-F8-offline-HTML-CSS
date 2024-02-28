@@ -10,11 +10,23 @@
 
   &-heading {
     margin-bottom: -46px;
+
+    @include abstracts.screen(sm) {
+      margin-bottom: 50px;
+    }
   }
 
   &-item {
     position: relative;
     margin-top: 210px;
+
+    @include abstracts.screen(sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      max-width: 100%;
+    }
 
     &__icon {
       display: block;
@@ -58,6 +70,10 @@
       max-height: 200px;
     }
 
+    @include abstracts.screen(sm) {
+      display: none;
+    }
+
     &__color {
       background-color: variables.$green-300;
     }
@@ -71,6 +87,11 @@
 
     &__left {
       margin-left: -28px;
+
+      @include abstracts.screen(sm) {
+        margin-left: 0;
+        max-width: 100%;
+      }
     }
   }
 
@@ -108,6 +129,10 @@
 
     &-6 {
       width: 134px;
+    }
+
+    @include abstracts.screen(sm) {
+      width: 100%;
     }
 
     &::after {

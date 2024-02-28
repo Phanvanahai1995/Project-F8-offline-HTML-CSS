@@ -135,6 +135,12 @@
       @include abstracts.screen(xl) {
         margin-right: 0;
       }
+
+      @include abstracts.screen(sm) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
     }
 
     &__link {

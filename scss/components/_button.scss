@@ -44,6 +44,10 @@
       font-size: 1.4rem;
     }
 
+    @include abstracts.screen(sm) {
+      max-width: 100%;
+    }
+
     &-1 {
       margin-left: 60px;
     }
