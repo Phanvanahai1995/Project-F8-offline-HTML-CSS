@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../abstracts";
 
 .btn {
   width: 154px;
@@ -39,16 +40,33 @@
       background-color: variables.$orange-600;
     }
 
+    @include abstracts.screen(md) {
+      font-size: 1.4rem;
+    }
+
     &-1 {
       margin-left: 60px;
     }
 
     &-2 {
       margin-left: 124px;
+
+      @include abstracts.screen(xl) {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     &-3 {
       margin-left: 68px;
+    }
+
+    &-1,
+    &-3 {
+      @include abstracts.screen(md) {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 

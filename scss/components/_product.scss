@@ -1,7 +1,12 @@
 @use "../variables";
+@use "../abstracts";
 
 .product {
   padding: 100px 0 133px 0;
+
+  @include abstracts.screen(lg) {
+    padding-top: 20px;
+  }
 
   &-heading {
     margin-bottom: -46px;
@@ -14,14 +19,26 @@
     &__icon {
       display: block;
       margin: 0 auto;
+
+      @include abstracts.screen(lg) {
+        max-width: 60%;
+      }
     }
 
     &-1 {
       margin-left: 103px;
+
+      @include abstracts.screen(xl) {
+        margin-left: 0;
+      }
     }
 
     &-2 {
       margin-right: 108px;
+
+      @include abstracts.screen(xl) {
+        margin-right: 0;
+      }
     }
   }
 
@@ -35,6 +52,11 @@
     border-radius: 50%;
     background: variables.$orange-300;
     z-index: -1;
+
+    @include abstracts.screen(xl) {
+      max-width: 200px;
+      max-height: 200px;
+    }
 
     &__color {
       background-color: variables.$green-300;
@@ -62,6 +84,10 @@
     font-weight: 700;
     color: variables.$primary-text-color;
     line-height: normal;
+
+    @include abstracts.screen(lg) {
+      font-size: 1.8rem;
+    }
 
     &-1,
     &-5 {
@@ -102,24 +128,30 @@
     font-size: 1.667rem;
     font-style: normal;
     line-height: 130%;
+
+    @include abstracts.screen(lg) {
+      font-size: 1.4rem;
+    }
   }
 
   &-desc {
     margin-top: 30.48px;
     display: block;
-    // text-align: center;
     color: variables.$grey-800;
   }
 
   &-price {
     margin-top: 12px;
-    // text-align: center;
     color: variables.$primary-text-color;
 
     strong {
       font-size: 2.333rem;
       font-weight: 600;
       line-height: 114, 3%;
+
+      @include abstracts.screen(lg) {
+        font-size: 1.8rem;
+      }
     }
   }
 }

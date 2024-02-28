@@ -12,6 +12,12 @@
   &-item {
     margin-top: 28.83px;
 
+    @include abstracts.screen(xl) {
+      max-width: 385px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
     &__image {
       max-width: 385px;
       aspect-ratio: 385/273.333;

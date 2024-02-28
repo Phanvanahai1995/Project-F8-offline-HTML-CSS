@@ -1,32 +1,69 @@
 @use "../variables";
+@use "../abstracts";
 
 .application {
   padding-top: 254.46px;
+
+  @include abstracts.screen(md) {
+    padding-top: 100px;
+  }
 
   &-item {
     display: flex;
     align-items: flex-start;
     gap: 15.83px;
 
+    @include abstracts.screen(lg) {
+      gap: 6px;
+    }
+
     &__one {
       margin-left: 113px;
+
+      @include abstracts.screen(xl) {
+        margin-left: 0;
+      }
     }
 
     &__two {
       justify-content: center;
       margin-left: -5px;
+
+      @include abstracts.screen(lg) {
+        margin-left: 20px;
+      }
     }
 
     &__three {
       margin-left: -7px;
+
+      @include abstracts.screen(lg) {
+        margin-left: 31px;
+      }
+
+      @include abstracts.screen(sm) {
+        margin-left: 18px;
+      }
     }
 
     &__four {
       margin-left: 124px;
+
+      @include abstracts.screen(xl) {
+        margin-left: 21px;
+      }
     }
 
     &__mt {
       margin-top: 53.83px;
+
+      @include abstracts.screen(sm) {
+        margin-top: 0;
+      }
+    }
+
+    @include abstracts.screen(md) {
+      margin-top: 20px;
     }
   }
 
@@ -34,6 +71,16 @@
     max-width: 55.8333px;
     max-height: 55.8333px;
     object-fit: cover;
+
+    @include abstracts.screen(lg) {
+      max-width: 40px;
+    }
+  }
+
+  &-title {
+    @include abstracts.screen(lg) {
+      font-size: 1.6rem;
+    }
   }
 
   &-desc {
@@ -44,5 +91,9 @@
     font-weight: 500;
     line-height: normal;
     color: variables.$primary-text-color;
+
+    @include abstracts.screen(lg) {
+      font-size: 1.4rem;
+    }
   }
 }

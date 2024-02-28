@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../abstracts";
 
 #footer {
   padding: 63.92px 0 26.67px 0;
@@ -8,10 +9,27 @@
 .footer {
   &-inner {
     display: flex;
+
+    @include abstracts.screen(xxl) {
+      justify-content: space-between;
+    }
+
+    @include abstracts.screen(lg) {
+      flex-direction: column;
+    }
   }
 
   &-column__left {
     margin-left: 112px;
+
+    @include abstracts.screen(xxl) {
+      margin-left: 0;
+    }
+
+    @include abstracts.screen(lg) {
+      display: flex;
+      gap: 30px;
+    }
 
     &-desc {
       display: flex;
@@ -41,6 +59,16 @@
 
     &__three {
       margin-left: 69.97px;
+    }
+
+    @include abstracts.screen(xxl) {
+      & {
+        margin-left: 0;
+      }
+    }
+
+    @include abstracts.screen(lg) {
+      margin-top: 20px;
     }
   }
 
@@ -95,10 +123,18 @@
 
     &__img {
       margin-left: 106.67px;
+
+      @include abstracts.screen(xl) {
+        margin-left: 0;
+      }
     }
 
     &__list {
       margin-right: 106.67px;
+
+      @include abstracts.screen(xl) {
+        margin-right: 0;
+      }
     }
 
     &__link {

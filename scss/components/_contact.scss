@@ -1,10 +1,16 @@
 @use "../variables";
+@use "../abstracts";
 
 .contact {
   padding: 144.67px 0 101px 0;
 
+  @include abstracts.screen(xl) {
+    padding: 80px 0;
+  }
+
   &-image {
-    max-width: 485.833px;
+    max-width: 100%;
+    object-fit: cover;
     margin-left: 4px;
   }
 
@@ -13,10 +19,15 @@
     &__heading {
       max-width: 361px;
       margin-top: 58.5px;
+
+      @include abstracts.screen(xl) {
+        margin-top: 0;
+      }
     }
 
     &__name {
-      width: 598px;
+      width: 100%;
+      max-width: 592px;
       margin-top: 26px;
       padding: 13.333px 491.667px 13.333px 13.333px;
       border-radius: 6.667px;
@@ -31,14 +42,23 @@
 
     &__email,
     &__phone {
-      max-width: 286.667px;
+      width: 286.667px;
+
+      @include abstracts.screen(lg) {
+        width: 100%;
+        max-width: 286.667px;
+      }
     }
 
     input,
     textarea {
-      padding: 13.333px 176.667px 13.333px 13.333px;
+      padding: 13.333px 150px 13.333px 13.333px;
       border-radius: 6.667px;
       border: 0.833px solid variables.$grey-500-main;
+
+      @include abstracts.screen(lg) {
+        padding-right: 50px;
+      }
     }
 
     input::placeholder,
@@ -47,19 +67,29 @@
       font-weight: 400;
       line-height: normal;
       color: variables.$grey-500-main;
+
+      @include abstracts.screen(lg) {
+        font-size: 1.2rem;
+      }
     }
 
     textarea {
       margin-top: 23.67px;
       display: block;
-      width: 596.8333px;
+      width: 100%;
+      max-width: 592px;
       height: 149px;
+      resize: none;
     }
 
     &__btn {
       margin-top: 26.65px;
       display: block;
       margin-left: 462px;
+
+      @include abstracts.screen(xxl) {
+        margin-left: 0;
+      }
     }
   }
 }

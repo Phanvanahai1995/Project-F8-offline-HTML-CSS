@@ -1,16 +1,27 @@
 @use "../variables";
+@use "../abstracts";
 
 .hero {
   padding-top: 109px;
+
   &-title {
     height: 708px;
     padding: 222px 0 231px 0;
+
+    @include abstracts.screen(xxl) {
+      padding: 50px 0;
+      height: 100%;
+    }
   }
 
   &__heading {
     font-size: 3.6667rem;
     font-weight: 800;
     color: variables.$primary-text-color;
+
+    @include abstracts.screen(lg) {
+      font-size: 2.8rem;
+    }
   }
 
   &__sub-heading {
@@ -20,17 +31,28 @@
     font-weight: 800;
     line-height: normal;
     text-transform: uppercase;
+
+    @include abstracts.screen(xxl) {
+      width: 100%;
+    }
+
+    @include abstracts.screen(lg) {
+      font-size: 3rem;
+    }
   }
 
   &__desc {
     margin-top: 28px;
     width: 450px;
+
+    @include abstracts.screen(xxl) {
+      width: 100%;
+    }
   }
 
   &-inner {
     position: relative;
     left: 5px;
-    background-color: orange;
 
     &__img {
       position: absolute;
@@ -38,6 +60,18 @@
       left: -159px;
       z-index: 1;
       object-fit: cover;
+
+      @include abstracts.screen(xxl) {
+        left: -71px;
+      }
+
+      @include abstracts.screen(lg) {
+        width: 70%;
+      }
+
+      @include abstracts.screen(md) {
+        left: -35px;
+      }
     }
 
     &__background {
@@ -48,6 +82,19 @@
       left: 6px;
       border-radius: 21.36px 0px 0px 21.36px;
       background: variables.$green-200;
+
+      @include abstracts.screen(xxl) {
+        width: 100%;
+        position: static;
+      }
+
+      @include abstracts.screen(lg) {
+        height: 530px;
+      }
+
+      @include abstracts.screen(md) {
+        height: 400px;
+      }
     }
 
     &__desc {
@@ -63,6 +110,17 @@
       opacity: 0.15;
       transform: rotate(90deg);
       text-transform: uppercase;
+
+      @include abstracts.screen(lg) {
+        font-size: 14rem;
+      }
+
+      @include abstracts.screen(md) {
+        font-size: 10rem;
+        width: 300px;
+        top: 73px;
+        right: -27px;
+      }
     }
   }
 }
