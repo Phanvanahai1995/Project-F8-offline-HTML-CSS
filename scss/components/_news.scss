@@ -3,6 +3,7 @@
 
 .news {
   padding-bottom: 50px;
+
   &-desc {
     max-width: 657.5px;
     margin: 23px auto 0;
@@ -10,12 +11,17 @@
   }
 
   &-item {
+    display: block;
     margin-top: 28.83px;
 
     @include abstracts.screen(xl) {
       max-width: 385px;
       margin-right: auto;
       margin-left: auto;
+    }
+
+    @include abstracts.screen(md) {
+      margin-top: 40px;
     }
 
     @include abstracts.screen(sm) {

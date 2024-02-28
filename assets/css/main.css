@@ -2122,6 +2122,7 @@ button {
   text-align: center;
 }
 .news-item {
+  display: block;
   margin-top: 28.83px;
 }
 @media (max-width: 1199.98px) {
@@ -2129,6 +2130,11 @@ button {
     max-width: 385px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .news-item {
+    margin-top: 40px;
   }
 }
 @media (max-width: 575.98px) {
