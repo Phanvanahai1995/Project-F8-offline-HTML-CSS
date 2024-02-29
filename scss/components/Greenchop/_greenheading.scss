@@ -1,0 +1,18 @@
+@use "../../variables";
+
+.green {
+  &-header {
+    background-color: variables.$green-100;
+  }
+
+  &-heading {
+    margin-top: 108px;
+    padding: 57.5px 0;
+    font-family: Inter;
+    font-size: 43.333px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: variables.$primary-text-color;
+  }
+}

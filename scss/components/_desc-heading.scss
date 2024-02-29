@@ -3,7 +3,8 @@
 
 .desc,
 .heading,
-.sub-heading {
+.sub-heading,
+.sub-desc {
   color: variables.$primary-text-color;
   font-style: normal;
 }
@@ -29,4 +30,9 @@
   font-size: 2rem;
   font-weight: 600;
   line-height: 133.333%;
+}
+
+.sub-desc {
+  font-size: 1.333rem;
+  line-height: 153.125%;
 }

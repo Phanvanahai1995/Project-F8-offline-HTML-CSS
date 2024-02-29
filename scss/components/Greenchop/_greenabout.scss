@@ -1,0 +1,53 @@
+@use "../../variables";
+
+.about {
+  &-heading {
+    margin-top: 100px;
+  }
+
+  &-main {
+    margin-top: 24.67px;
+  }
+
+  &-content {
+    margin-top: 148.33px;
+  }
+
+  &-content,
+  &-left {
+    margin-left: 113.33px;
+  }
+
+  &-content,
+  &-left__content {
+    max-width: 376.66px;
+  }
+
+  &-image {
+    max-width: 100%;
+    aspect-ratio: 479.167/389.167;
+    object-fit: cover;
+  }
+
+  &-left__inner {
+    margin-top: 50px;
+  }
+
+  &-left__content {
+    margin-top: 125px;
+  }
+
+  &-right {
+    &-inner {
+      margin-top: 93.54px;
+    }
+
+    &__content {
+      max-width: 440px;
+    }
+
+    &__image {
+      margin: 93.11px 0 0 85px;
+    }
+  }
+}

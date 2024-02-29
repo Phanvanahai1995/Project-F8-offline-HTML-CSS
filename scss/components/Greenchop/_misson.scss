@@ -1,0 +1,56 @@
+@use "../../variables";
+
+.mission {
+  padding: 100px 0 232.98px 0;
+
+  &-item {
+    position: relative;
+  }
+
+  &-image {
+    display: block;
+    margin-left: auto;
+  }
+
+  &-item::after {
+    position: absolute;
+    top: 75.83px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: variables.$green-200;
+    z-index: -2;
+  }
+
+  &-item::before {
+    position: absolute;
+    top: 278px;
+    left: 240.83px;
+    content: "";
+    display: block;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: variables.$orange-200;
+    z-index: -1;
+  }
+
+  &-right__item {
+    margin-top: 66.67px;
+    margin-left: 69.17px;
+    display: flex;
+    flex-direction: column;
+    gap: 26.33px;
+  }
+
+  &-heading {
+    text-align: initial;
+  }
+
+  &-desc {
+    max-width: 410px;
+  }
+}
