@@ -1,0 +1,108 @@
+@use "../../variables";
+
+.users {
+  padding: 216px 0 133px;
+
+  &-heading {
+    max-width: 381px;
+  }
+
+  &-heading,
+  &-desc {
+    margin: 0 auto;
+  }
+
+  &-desc {
+    max-width: 380px;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  &-row {
+    margin-top: 50px;
+  }
+
+  &-item {
+    display: flex;
+    gap: 9.83px;
+
+    &__number {
+      position: relative;
+      text-align: right;
+      -webkit-text-stroke-width: 1.6666666269302368px;
+      -webkit-text-stroke-color: variables.$primary-text-color;
+      font-size: 8.333rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+      color: transparent;
+
+      &::before {
+        position: absolute;
+        top: -11.67px;
+        left: 39.17px;
+        z-index: -1;
+        content: "";
+        width: 123.33px;
+        height: 123.33px;
+        background: variables.$orange-100;
+        border-radius: 50%;
+        display: block;
+      }
+    }
+
+    &__desc {
+      max-width: 154px;
+      margin-top: 20px;
+
+      &-small {
+        max-width: 135px;
+      }
+    }
+  }
+
+  &-row {
+    &__end {
+      margin-top: 103px;
+    }
+
+    &__content {
+      margin-left: 90px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 653.333px;
+      height: 350px;
+      border-radius: 0px 8.333px 8.333px 0px;
+      background: #fff;
+      filter: drop-shadow(25.833px 23.333px 103.333px rgba(0, 0, 0, 0.06));
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 8.333px;
+        height: 350px;
+        border-radius: 0px 8.333px 8.333px 0px;
+        background: variables.$primary-main-color;
+      }
+    }
+
+    &__desc {
+      max-width: 554px;
+      color: variables.$primary-text-color;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 154.167%;
+    }
+  }
+
+  &-image {
+    margin-top: 35.83px;
+    width: 588.333px;
+    aspect-ratio: 588.333/447.78;
+  }
+}

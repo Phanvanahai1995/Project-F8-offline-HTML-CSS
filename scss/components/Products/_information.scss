@@ -1,0 +1,35 @@
+.information {
+  &-title {
+    position: relative;
+    margin-top: 124.17px;
+    padding-left: 85.83px;
+  }
+  &-heading {
+    text-align: initial;
+  }
+
+  &-desc {
+    margin-top: 15.17px;
+    max-width: 366.667px;
+  }
+
+  &-decorate {
+    position: absolute;
+    top: -27px;
+    left: 0;
+    z-index: -1;
+  }
+
+  &-img {
+    padding-top: 55.7px;
+    position: relative;
+    filter: drop-shadow(15.833px 63.333px 75px rgba(0, 0, 0, 0.1));
+  }
+
+  &-decorate__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}

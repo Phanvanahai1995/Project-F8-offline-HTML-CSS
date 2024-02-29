@@ -1,0 +1,39 @@
+@use "../../variables";
+
+.security {
+  &-item {
+    position: relative;
+    margin-top: 116px;
+  }
+
+  &-image__top {
+    margin-left: 114px;
+  }
+
+  &-desc {
+    max-width: 530px;
+    margin-left: 50px;
+
+    &__bot {
+      max-width: 532px;
+      margin-left: 112px;
+    }
+  }
+
+  &-decorate {
+    position: absolute;
+    top: -66.67px;
+
+    z-index: -1;
+    width: 1405px;
+    height: 357.5px;
+    &__one {
+      background: variables.$green-100;
+    }
+
+    &__two {
+      right: 0;
+      background: variables.$orange-100;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@use "../../variables";
+
+.special {
+  padding: 160px 0 0;
+  &-img__top {
+    display: block;
+    margin-left: auto;
+    translate: -16px -26.27px;
+  }
+
+  &-content {
+    > span {
+      color: variables.$primary-main-color;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    &__top {
+      margin-left: 50px;
+    }
+
+    &__end {
+      margin-left: 110px;
+    }
+  }
+
+  &-heading {
+    max-width: 368.667px;
+    margin-top: 10.33px;
+    font-size: 2.3333rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: variables.$primary-text-color;
+  }
+
+  &-desc {
+    max-width: 424.167px;
+    margin-top: 27.33px;
+  }
+
+  &-btn {
+    justify-content: flex-start;
+  }
+
+  &-row {
+    margin-top: 47px;
+  }
+
+  &-img__bot {
+    translate: 16px -149.17px;
+  }
+}

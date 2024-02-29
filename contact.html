@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ</title>
+    <!-- Font Embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Address -->
+    <div class="address">
+      <img
+        src="./assets/img/Liên hệ/address.svg"
+        alt="address-greenchop"
+        class="address-img"
+      />
+    </div>
+
+    <!-- contacts -->
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts-inner">
+          <div class="row">
+            <div class="col-5">
+              <div class="contacts-left">
+                <h2 class="heading contacts-left__heading">Liên hệ</h2>
+                <p class="contacts-left__sub-heading">
+                  Đặt hàng trực tuyến (8h-22h)
+                </p>
+                <a
+                  href="#!"
+                  class="footer-item__link footer-item__link-decorate footer-item__link-decorate-strong contacts-link"
+                >
+                  <img
+                    src="./assets/img/Footer/alarm.svg"
+                    alt="alarm-icon"
+                    class="footer-item__link-icon"
+                  />
+                  Thứ 2 - Thứ 6</a
+                >
+                <a
+                  href="#!"
+                  class="footer-item__link footer-item__link-decorate footer-item__link-decorate-strong contacts-link"
+                >
+                  <img
+                    src="./assets/img/Footer/phone_outline.svg"
+                    alt="phone-icon"
+                    class="footer-item__link-icon"
+                  />
+                  091 1717 222</a
+                >
+                <a
+                  href="#!"
+                  class="footer-item__link footer-item__link-decorate contacts-link"
+                >
+                  <img
+                    src="./assets/img/Footer/mail.svg"
+                    alt="mail-icon"
+                    class="footer-item__link-icon"
+                  />
+                  greenchopvn@gmail.com</a
+                >
+                <a
+                  href="#!"
+                  class="footer-item__link footer-item__link-decorate contacts-link"
+                >
+                  <img
+                    src="./assets/img/Footer/globe.svg"
+                    alt="global-icon"
+                    class="footer-item__link-icon"
+                  />
+                  Greenchop.vn</a
+                >
+                <a
+                  href="#!"
+                  class="footer-item__link footer-item__link-decorate footer-item__link-decorate-break contacts-link"
+                >
+                  <img
+                    src="./assets/img/Footer/map-pin.svg"
+                    alt="phone-icon"
+                    class="footer-item__link-icon"
+                  />
+                  428 Điện Biên Phủ, P11, Quận 10, TPHCM</a
+                >
+              </div>
+            </div>
+            <div class="col-7">
+              <form action="" class="contact-form contacts-form">
+                <h3 class="sub-heading contact-form__heading">
+                  Bạn có bất kì thắc mắc nào. <br />
+                  Hãy để lại tin nhắn cho chúng tôi nhé!
+                </h3>
+                <input
+                  type="text"
+                  name="name"
+                  class="contact-form__name"
+                  placeholder="Tên của bạn"
+                  required
+                />
+                <div class="contact-form__row">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    class="contact-form__email"
+                  />
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Số điện thoại"
+                    required
+                    class="contact-form__phone"
+                  />
+                </div>
+                <textarea name="message" placeholder="Nội dung..."></textarea>
+                <button class="btn-form contact-form__btn">Gửi</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application -->
+    <div class="application product-application" id="application"></div>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Script -->
+    <script src="./assets/javascript/main.js"></script>
+    <script>
+      load("#header", "./templates/header.html");
+    </script>
+    <script>
+      load("#application", "./templates/application.html");
+    </script>
+    <script>
+      load("#footer", "./templates/footer.html");
+    </script>
+    <script src="./assets/javascript/js.js"></script>
+  </body>
+</html>
